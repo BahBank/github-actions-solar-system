@@ -73,5 +73,5 @@
           with:
             context: .
             push: true
-            tags: ghcr.io/${{ (github.repository).lowercase }}/solar-system:${{ github.sha }}
+            tags: ghcr.io/bahbank/solar-system:${{ github.sha }}
            
