@@ -57,8 +57,9 @@
             path: coverage
             retention-days: 5
     docker:
+      permissions:
+        packages: write
       needs: [ unit-testing, code-coverage ]
-      name: Docker
       runs-on: ubuntu-latest
       steps:
         - name: Checkout Repository
